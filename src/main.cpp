@@ -9,8 +9,8 @@
 #include <ArduinoJson.h>
 #include <PubSubClient.h>
 
-String dId = "121212";
-String webhook_pass = "SA7sxAKDVR";
+String dId = "123456";
+String webhook_pass = "o0gMvelYH2";
 String webhook_endpoint = "http://192.168.0.6:3001/api/getdevicecredentials";
 const char *mqtt_server = "192.168.0.6";
 
@@ -18,8 +18,8 @@ const char *mqtt_server = "192.168.0.6";
 #define led 2
 
 //WiFi
-const char *wifi_ssid = "GOLD2";
-const char *wifi_password = "Tesla208";
+const char *wifi_ssid = "CEGA-MORENA RUIZ";
+const char *wifi_password = "33044509";
 
 //Functions definitions
 bool get_mqtt_credentials();
@@ -94,8 +94,6 @@ void loop()
   
 }
 
-
-
 //USER FUNTIONS ⤵
 void process_sensors()
 {
@@ -164,9 +162,6 @@ void process_actuators()
   }
 
 }
-
-
-
 
 //TEMPLATE ⤵
 void process_incoming_msg(String topic, String incoming){
